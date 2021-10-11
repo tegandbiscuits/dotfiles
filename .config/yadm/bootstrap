@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if ! command -v antigen >/dev/null 2>&1; then
+  echo "Installing antigen"
+  curl -L git.io/antigen > ~/.antigen.zsh
+fi
