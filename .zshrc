@@ -2,7 +2,14 @@ source "$HOME/.antigen.zsh"
 
 antigen use oh-my-zsh
 
-export VISUAL=nvim
+if [ -x "$(command -v nvim)" ]; then
+  export VISUAL=nvim
+elif [ -x "$(command -v vim)" ]; then
+  export VISUAL=vim
+else
+  export VISUAL=nano
+fi
+
 export EDITOR="$VISUAL"
 
 antigen bundle bundler
