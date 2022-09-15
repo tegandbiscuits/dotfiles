@@ -22,4 +22,7 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
   fi
+
+  defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+  defaults write -g NSWindowShouldDragOnGesture -bool true
 fi
