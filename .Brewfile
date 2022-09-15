@@ -1,4 +1,7 @@
+cask 'dozer'
 cask 'iterm2'
+cask 'scroll-reverser'
+cask 'sensiblesidebuttons'
 
 brew 'fzf'
 brew 'lazygit'
