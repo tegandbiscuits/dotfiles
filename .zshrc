@@ -1,5 +1,7 @@
 source "$HOME/.antigen.zsh"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 antigen use oh-my-zsh
 
 if [ -x "$(command -v nvim)" ]; then
@@ -15,6 +17,7 @@ export EDITOR="$VISUAL"
 antigen bundle bundler
 antigen bundle docker-compose
 antigen bundle git
+antigen bundle fzf
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
