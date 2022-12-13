@@ -3,6 +3,7 @@ cask 'iterm2'
 cask 'scroll-reverser'
 cask 'sensiblesidebuttons'
 
+brew 'bat'
 brew 'fzf'
 brew 'lazygit'
 brew 'neovim'
