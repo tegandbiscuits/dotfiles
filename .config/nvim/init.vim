@@ -31,7 +31,6 @@ Plug 'vim-ruby/vim-ruby'
 
 if !exists('g:vscode')
   Plug 'andymass/vim-matchup'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 end
 
 Plug 'ryanoasis/vim-devicons' " This apparently needs to be last?
@@ -50,7 +49,6 @@ source ~/.config/nvim/plugin-config.vim
 
 if !exists('g:vscode')
   source ~/.config/nvim/nerdtree.vim
-  source ~/.config/nvim/coc.vim
 end
 
 set conceallevel=0
