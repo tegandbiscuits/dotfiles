@@ -24,7 +24,24 @@ if [ "$system_type" = "Darwin" ]; then
     brew bundle --global
   fi
 
-  defaults write -g ApplePressAndHoldEnabled -bool false
+  echo "⚠️ Go download MesloLGMDZ Nerd Font Mono for iTerm"
+
+  echo "Setting iTerm2 to load preferences from home folder"
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+  defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~"
+
+  echo "Hiding desktop"
   defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+
+  echo "Keyboard settings"
+  defaults write -g ApplePressAndHoldEnabled -bool false
+  defaults write -g KeyRepeat -int 1
+  defaults write -g InitialKeyRepeat -int 10
+  echo "⚠️ Map caps lock to escape key"
+
+  echo "Dragy windows"
   defaults write -g NSWindowShouldDragOnGesture -bool true
+
+  # set dozer, scroll reverser, sensible-sidebuttons as login items
+  # also is sensible-sidebuttons still needed?
 fi
