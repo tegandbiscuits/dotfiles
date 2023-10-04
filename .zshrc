@@ -21,6 +21,8 @@ antigen bundle docker-compose
 antigen bundle git
 antigen bundle fzf
 
+antigen bundle $HOME/.config/custom-zsh-plugins/cow-motd
+
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
 antigen bundle zsh-users/zsh-history-substring-search
