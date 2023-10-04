@@ -52,6 +52,8 @@ alias oc="overmind connect"
 alias or="overmind restart"
 alias os="overmind start"
 
+eval $(thefuck --alias)
+
 # Load private settings
 
 source $HOME/.zshrc-local
