@@ -64,3 +64,7 @@ source $HOME/.zshrc-local
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export GPG_TTY=$(tty)
+
+setopt auto_cd
+cdpath=($HOME/Projects)
+
