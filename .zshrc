@@ -25,7 +25,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle paulirish/git-open
-# antigen bundle zsh-users/zsh-syntax-highlighting
 
 BULLETTRAIN_PROMPT_ORDER=(
 	time
@@ -41,6 +40,9 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 HOMEBREW_NO_INSTALL_CLEANUP=1
 
 antigen theme caiogondim/bullet-train.zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 antigen apply
 
 # bindkey "$terminfo[kcuf1]" history-substring-search-up # right
