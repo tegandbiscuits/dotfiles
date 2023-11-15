@@ -22,6 +22,7 @@ antigen bundle git
 antigen bundle fzf
 
 antigen bundle $HOME/.config/custom-zsh-plugins/cow-motd
+antigen bundle $HOME/.config/custom-zsh-plugins/auto-nvm
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
