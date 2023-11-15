@@ -1,7 +1,7 @@
 cask 'dozer'
 cask 'iterm2'
 cask 'scroll-reverser'
-cask 'sensiblesidebuttons'
+# cask 'sensiblesidebuttons'
 
 brew 'bat'
 brew 'fortune'
