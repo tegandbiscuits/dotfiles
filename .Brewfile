@@ -12,3 +12,6 @@ brew 'lazygit'
 brew 'neovim'
 brew 'overmind'
 brew 'thefuck'
+
+tap 'homebrew/cask-fonts'
+cask 'font-meslo-lg-nerd-font'

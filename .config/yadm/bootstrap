@@ -24,8 +24,6 @@ if [ "$system_type" = "Darwin" ]; then
     brew bundle --global
   fi
 
-  echo "⚠️ Go download MesloLGMDZ Nerd Font Mono for iTerm"
-
   echo "Setting iTerm2 to load preferences from home folder"
   defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
   defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~"
